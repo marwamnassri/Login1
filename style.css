@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family-Poppins:200,300,400,500,600,700,800,900&display-swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://i.ibb.co/7tDMfRt/premium-photo-1705169612261-2cf0407141c3.jpg');
+   
+      
+}
+
+
+
+
+:root {
+    --main-color:#8f2c24;
+    --secondary-color: #d64c42;
+    --accent-color: #fff;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+
+.login {
+    position: relative;
+    padding: 60px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--accent-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+    z-index: 201;
+}
+
+.login h2 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+login .inputBox {
+    position: relative;
+}
+
+.field {
+    cursor: text;
+}
+
+.submit {
+    cursor: pointer;
+}
+
+.login .inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 1.25rem;
+    color: var(--main-color);
+    border-radius: 5px;
+    background: var(--accent-color);
+    border: none;
+}
+
+.login .inputBox ::placeholder {
+    color: var(--main-color);
+}
+
+.login .inputBox #btn {
+    position: relative;
+    border: none;
+    outline: none;
+    background: var(--main-color);
+    color: var(--accent-color);
+    transition: background 0.15s;
+}
+
+.login .inputBox #btn:hover {
+    background: var(--secondary-color);
+}
+
+.login .group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .group a {
+    font-size: 1.25rem;
+    color: var(--main-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.login .group a:hover {
+    color: var(--secondary-color);
+}
+
+.login .group a:nth-child(2) {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
