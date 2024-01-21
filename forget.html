@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family-Poppins:200,300,400,500,600,700,800,900&display-swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            background-image: url('https://i.ibb.co/7tDMfRt/premium-photo-1705169612261-2cf0407141c3.jpg');
+        }
+
+        :root {
+            --main-color: #8f2c24;
+            --secondary-color: #d64c42;
+            --accent-color: #fff;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .forgot-password {
+            position: relative;
+            padding: 60px;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--accent-color);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+            z-index: 201;
+        }
+
+        .forgot-password h2 {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--main-color);
+            margin-bottom: 10px;
+        }
+
+        .forgot-password .inputBox {
+            position: relative;
+        }
+
+        .forgot-password .inputBox input {
+            position: relative;
+            width: 100%;
+            padding: 15px 20px;
+            outline: none;
+            font-size: 1.25rem;
+            color: var(--main-color);
+            border-radius: 5px;
+            background: var(--accent-color);
+            border: none;
+        }
+
+        .forgot-password .inputBox ::placeholder {
+            color: var(--main-color);
+        }
+
+        .forgot-password #btn {
+            position: relative;
+            border: none;
+            outline: none;
+            background: var(--main-color);
+            color: var(--accent-color);
+            transition: background 0.15s;
+        }
+
+        .forgot-password #btn:hover {
+            background: var(--secondary-color);
+        }
+
+        .forgot-password .group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .forgot-password .group a {
+            font-size: 1.25rem;
+            color: var(--main-color);
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .forgot-password .group a:hover {
+            color: var(--secondary-color);
+        }
+
+        .forgot-password .group a:nth-child(2) {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="forgot-password">
+            <h2>Forgot Password</h2>
+            <form>
+                <div class="inputBox">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <button type="submit" id="btn">Reset Password</button>
+            </form>
+
+            <div class="group">
+                <a href="#">Remembered your password?</a>
+                <a href="index.html">Go back to login</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
